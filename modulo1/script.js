@@ -31,15 +31,15 @@ function pedir() {
     z = prompt("Digite seu pedido: ");
     switch (z) {
         case "0":
-            alert("Voce pediu um sorvete!");
+            alert("Você pediu um sorvete!");
             break;
         case "1":
-            alert("Voce pediu um suco de fruta!");
+            alert("Você pediu um suco de fruta!");
             break;
         case "2":
-            alert("Voce pediu um refrigerante!");
+            alert("Você pediu um refrigerante!");
             break;
         default:
-            alert("Obs, pedido nao encontrado! Tente de novo.")
+            alert("Obs, pedido não encontrado! Tente de novo.")
     }
 }
