@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Aprendendo JavaScript - Módulo 2</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onload="carregar()">
+    <div>
+        <h2>Eventos do mouse</h2>
+        <button style="width: 60px; height: 30px;" onmousedown="clicar()" onmouseup="soltar()" onmouseover="passar()"
+            onmouseout="tirar()" onmousemove="mover()" oncontextmenu="return bloquear()">
+            Pedido
+        </button>
+    </div>
+    <h2>Eventos do teclado</h2>
+    <div>
+        <input type="text" onkeydown="apertar(event)" onkeyup="largar(event)" onkeypress="pressionar(event)">
+    </div>
+    <h2>Eventos de formulário</h2>
+    <form method="POST" onsubmit="enviar()">
+        <input type="text" name="nome" onfocus="focar()" onblur="desfocar()"><br><br>
+        <select name="cidades" onchange="selecionar(this)">
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Arapiraca</option>
+            <option>Aracajú</option>
+        </select>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+
+</html>
