@@ -13,12 +13,16 @@
   * [NodeJS](https://nodejs.org/en/) :link:
   * [Chocolatey](https://chocolatey.org/install) :link:
   * [Yarn](https://yarnpkg.com/pt-BR/) :link:
+  * [Expo](https://docs.expo.io/versions/latest/)
   * [React Native](https://facebook.github.io/react-native/) :link:
 
 ## Configurações do ambiente:
 
-  ### Instalação do NodeJS:
+  ### Instalação do NodeJS através do Chocolatey:
     cinst nodejs.install
 
-  ### Instalação do React Native:
+  ### Instalação do React Native através do Expo:
     npm install -g expo-cli
+  
+  ### Instalação das dependêcias do projetos:
+    yarn
