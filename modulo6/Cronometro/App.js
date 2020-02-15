@@ -7,7 +7,7 @@ class App extends Component {
     super(props);
     this.state = {
       relogio: 0,
-      botao: 'INICIAR',
+      botao: 'Iniciar',
       resultado: null
     };
 
@@ -21,12 +21,12 @@ class App extends Component {
     if (this.timer != null) {
       clearInterval(this.timer);
       this.timer = null;
-      this.setState({ botao: 'CONTINUAR' })
+      this.setState({ botao: 'Continuar' })
     } else {
       this.timer = setInterval(() => {
         this.setState({ relogio: this.state.relogio + 0.1 })
       }, 100);
-      this.setState({ botao: 'PAUSAR' });
+      this.setState({ botao: 'Pausar' });
     }
   }
 
@@ -38,7 +38,7 @@ class App extends Component {
     this.setState({
       resultado: this.state.relogio,
       relogio: 0,
-      botao: 'INICIAR',
+      botao: 'Iniciar',
     });
   }
 
@@ -57,7 +57,7 @@ class App extends Component {
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.btn} onPress={this.limpar}>
-            <Text style={styles.btnTexto}>LIMPAR</Text>
+            <Text style={styles.btnTexto}>Limpar</Text>
           </TouchableOpacity>
         </View>
 
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     borderRadius: 9
   },
   btnTexto: {
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: 'bold',
     color: '#00aeef'
   },
